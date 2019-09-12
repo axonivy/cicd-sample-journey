@@ -1,2 +1,4 @@
 Data #class
 com.acme.solution #namespace
+credit com.acme.solution.CreditRequest #field
+credit PERSISTENT #fieldModifier

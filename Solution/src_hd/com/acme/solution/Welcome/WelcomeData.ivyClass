@@ -1,0 +1,4 @@
+WelcomeData #class
+com.acme.solution.Welcome #namespace
+requester com.acme.solution.Person #field
+requester PERSISTENT #fieldModifier

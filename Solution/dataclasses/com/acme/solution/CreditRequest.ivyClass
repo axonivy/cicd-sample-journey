@@ -1,0 +1,4 @@
+CreditRequest #class
+com.acme.solution #namespace
+requester com.acme.solution.Person #field
+requester PERSISTENT #fieldModifier
