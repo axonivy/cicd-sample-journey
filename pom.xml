@@ -34,6 +34,27 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>com.axonivy.ivy.ci</groupId>
+        <artifactId>project-build-plugin</artifactId>
+        <version>7.4.0</version>
+        <executions>
+          <execution>
+            <id>deploy.to.development.server</id>
+            <phase>integration-test</phase>
+            <goals>
+              <goal>deploy-to-engine</goal>
+            </goals>
+            <configuration>
+              <deployMethod>HTTP</deployMethod>
+              <deployEngineUrl>http://localhost:8080/ivy</deployEngineUrl>
+              <deployToEngineApplication>mySolution</deployToEngineApplication>
+              <deployFile>${project.build.directory}/${project.artifactId}-${project.version}.zip</deployFile>
+              <deployServerId>axonivy.engine.local</deployServerId>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>

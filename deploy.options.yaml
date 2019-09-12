@@ -1,0 +1,11 @@
+# allow smoke test users
+deployTestUsers: TRUE
+
+# enforce configuration overwrite
+configuration:
+  overwrite: true               # [false], true
+  cleanup: REMOVE_UNUSED              # [DISABLED], REMOVE_UNUSED, REMOVE_ALL
+
+# strictly pre-define version (version in POM does not determine released PMV version)
+target:
+  version: 1.0

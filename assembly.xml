@@ -10,6 +10,7 @@
       <directory>${basedir}</directory>
       <includes>
         <include>app.yaml</include>
+        <include>deploy.options.yaml</include>
       </includes>
     </fileSet>
   </fileSets>

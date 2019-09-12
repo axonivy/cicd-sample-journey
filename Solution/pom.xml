@@ -31,21 +31,6 @@
         <artifactId>project-build-plugin</artifactId>
         <version>7.4.0</version>
         <extensions>true</extensions>
-        <executions>
-          <execution>
-            <id>deploy.to.development.server</id>
-            <phase>integration-test</phase>
-            <goals>
-              <goal>deploy-to-engine</goal>
-            </goals>
-            <configuration>
-              <deployMethod>HTTP</deployMethod>
-              <deployEngineUrl>http://localhost:8080/ivy</deployEngineUrl>
-              <deployToEngineApplication>demo-portal</deployToEngineApplication>
-              <deployServerId>axonivy.engine.local</deployServerId>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
