@@ -1,0 +1,4 @@
+# portal as workflow ui
+StandardProcess: 
+  DefaultPages: ch.ivyteam.ivy.project.portal:portalTemplate
+  MailNotification: ch.ivyteam.ivy.project.portal:portalTemplates
