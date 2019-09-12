@@ -11,6 +11,7 @@
     <!-- refer all workspace projects that contribute to your application
     NOT: dependent projects consumed from maven (e.g. Portal) -->
     <module>Solution</module>
+    <module>SolutionTest</module>
   </modules>
 
   <build>
